@@ -1,15 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Open Sans", sans-seif;
 }
 
 nav {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav a {
@@ -20,8 +27,12 @@ nav a {
 
 nav ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 nav ul li {
@@ -31,8 +42,12 @@ nav ul li {
 }
 
 nav .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav .logo {
@@ -95,10 +110,12 @@ nav .logo img {
   padding: 9px 25px;
   border-radius: 2rem;
   border: none;
-  font-weight: 600;
+  font-weight: 200;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   font-size: 14px;
-  box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15);
+  -webkit-box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15);
+          box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15);
 }
 
 .primary-btn:hover {
@@ -108,6 +125,7 @@ nav .logo img {
 .light-link {
   text-decoration: none;
   color: #000;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   line-height: 21px;
 }
@@ -119,7 +137,9 @@ nav .logo img {
 
 .welcome-area {
   padding: 5rem 0;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .welcome-area > div {
@@ -127,7 +147,8 @@ nav .logo img {
 }
 
 .welcome-area .col-5 {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-image: url("../../images/hero-2.jpg");
   background-repeat: no-repeat;
 }
@@ -156,7 +177,9 @@ nav .logo img {
 }
 
 .special-recipe .row {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .special-recipe .row .col-3 img {
@@ -164,6 +187,7 @@ nav .logo img {
 }
 
 .special-recipe .row a {
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   color: #f34949;
   text-decoration: none;
@@ -178,15 +202,6 @@ nav .logo img {
 
 .special-recipe .row a:hover {
   color: #E22104;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
 }
 
 body {

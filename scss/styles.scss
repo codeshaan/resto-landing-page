@@ -12,6 +12,15 @@
 @import "buttons";
 @import "welcome-area";
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
 body {
   background-color: $background-color;
   padding: 1rem;
