@@ -95,7 +95,7 @@ nav .logo img {
   padding: 9px 25px;
   border-radius: 2rem;
   border: none;
-  font-weight: 600;
+  font-weight: normal;
   transition: all 0.4s;
   font-size: 14px;
   box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15);
@@ -178,6 +178,128 @@ nav .logo img {
 
 .special-recipe .row a:hover {
   color: #E22104;
+}
+
+.special-dishes {
+  background: #f7f8f9;
+  margin: 10rem  0;
+  padding: 4rem 0;
+}
+
+.special-dishes .row {
+  justify-content: space-between;
+}
+
+.special-dishes header,
+.menu header {
+  text-align: center;
+  padding: 0 6rem;
+}
+
+.special-dishes header h6,
+.menu header h6 {
+  color: #f34949;
+  font-weight: 200;
+}
+
+.special-dishes header h2,
+.menu header h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
+.dishes {
+  padding: 0 2rem;
+}
+
+.dishes .number {
+  margin-bottom: 2rem;
+}
+
+.dishes .number h1 {
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+}
+
+.dishes .number h1:before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 90px;
+  height: 1px;
+  width: 200px;
+  background: #000;
+}
+
+.dishes .text {
+  padding-left: 90px;
+}
+
+.dishes .text .dish-name {
+  margin-bottom: 2rem;
+}
+
+.dishes .text .dish-name h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+}
+
+.dishes .text .dish-name h2:nth-child(1) {
+  color: #f34949;
+}
+
+.dishes .text .dish-description p {
+  line-height: 24px;
+  padding-bottom: 1rem;
+}
+
+.dishes .text .dish-description .dish-price h3 {
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.col-5.steak-img img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
+}
+
+.menu .breakfast-items {
+  margin: 1rem 2rem 0 0;
+}
+
+.menu .breakfast-items .heading {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.menu .breakfast-items .heading h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.menu .breakfast {
+  border-bottom: 1px dashed #cccccc;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .breakfast img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.menu .breakfast-description {
+  width: calc(100% - 95px);
+  padding-left: 1rem;
+}
+
+.menu .breakfast-description h4 {
+  font-size: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 h1,

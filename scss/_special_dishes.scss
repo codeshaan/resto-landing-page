@@ -1,0 +1,80 @@
+.special-dishes {
+  background: #f7f8f9;
+  margin: 10rem  0;
+  padding: 4rem 0;
+
+  .row {
+    justify-content: space-between;
+  }
+}
+
+.special-dishes header,
+.menu header {
+  text-align: center;
+  padding: 0 6rem;
+
+  h6 {
+    color: $red-light-color;
+    font-weight: 200;
+  }
+
+  h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+  }
+}
+
+.dishes {
+  padding: 0 2rem;
+  .number {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 60px;
+      font-family: "Josefin Sans", sans-serif;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 30px;
+        left: 90px;
+        height: 1px;
+        width: 200px;
+        background: #000;
+      }
+    }
+  }
+
+  .text {
+    padding-left: 90px;
+
+    .dish-name {
+      margin-bottom: 2rem;
+      h2 {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 800;
+      }
+      h2:nth-child(1) {
+        color: $red-light-color;
+      }
+    }
+
+    .dish-description {
+      p {
+        line-height: 24px;
+        padding-bottom: 1rem;
+      }
+      .dish-price h3 {
+        font-weight: bold;
+        font-family: "Josefin Sans", sans-serif;
+      }
+    }
+  }
+}
+
+.col-5.steak-img {
+  img {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
+  }
+}
