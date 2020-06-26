@@ -1,0 +1,62 @@
+.welcome-area {
+  padding: 5rem 0;
+  justify-content: space-between;
+  & > div {
+    padding: 1rem 3rem;
+  }
+  .col-5 {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-image: url("../../images/hero-2.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.welcome-text {
+  p {
+    margin-top: 2rem;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  h5 {
+    color: $red-light-color;
+  }
+  h3 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+}
+
+.special-recipe {
+  margin-top: 3rem;
+
+  h3 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+}
+
+.special-recipe .row {
+  justify-content: space-between;
+
+  .col-3 {
+    img {
+      width: 135%;
+    }
+  }
+  a {
+    transition: all 0.4s;
+    color: $red-light-color;
+    text-decoration: none;
+
+    & > h6 {
+      margin-top: 10px;
+      line-height: 19px;
+      font-size: 16px;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    &:hover {
+      color: $red-color;
+    }
+  }
+}

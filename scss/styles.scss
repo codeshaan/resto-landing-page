@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-seif;
+  // border: 2px solid #ff3600 !important;
+}
+
+@import "config";
+@import "nav";
+@import "hero";
+@import "buttons";
+@import "welcome-area";
+
+body {
+  background-color: $background-color;
+  padding: 1rem;
+}
+
+main {
+  padding: 2rem 4rem;
+  background: #fff;
+}

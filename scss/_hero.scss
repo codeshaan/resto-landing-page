@@ -1,0 +1,46 @@
+.hero-bg {
+  margin: 40px 0;
+
+  .cta-heading {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .cta-heading h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 3.48rem;
+  }
+
+  .cta-actions > * {
+    margin-right: 30px;
+  }
+
+  .cta-grid {
+    margin-top: 60px;
+
+    & > div {
+      padding: 1rem 0.5rem;
+      text-align: center;
+    }
+
+    & > div:not(:nth-child(3)) {
+      border-right: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    h4 {
+      font-family: "Josefin Sans", sans-serif;
+    }
+  }
+}
+
+.hero-right {
+  .image-slider {
+    width: 540px;
+
+    img {
+      width: 80%;
+      margin-left: 50px;
+    }
+  }
+}
