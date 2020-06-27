@@ -6,6 +6,7 @@
 }
 
 nav {
+  padding: 2rem 6rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -16,6 +17,10 @@ nav a {
   color: #000;
   text-decoration: none;
   font-weight: 300;
+}
+
+nav a:hover {
+  color: #f34949;
 }
 
 nav ul {
@@ -78,6 +83,12 @@ nav .logo img {
 
 .hero-bg .cta-grid h4 {
   font-family: "Josefin Sans", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-bg {
+    text-align: center;
+  }
 }
 
 .hero-right .image-slider {
@@ -182,7 +193,7 @@ nav .logo img {
 
 .special-dishes {
   background: #f7f8f9;
-  margin: 10rem  0;
+  margin: 10rem 0;
   padding: 4rem 0;
 }
 
@@ -191,25 +202,28 @@ nav .logo img {
 }
 
 .special-dishes header,
-.menu header {
+.menu header,
+.team-area header {
   text-align: center;
   padding: 0 6rem;
 }
 
 .special-dishes header h6,
-.menu header h6 {
+.menu header h6,
+.team-area header h6 {
   color: #f34949;
   font-weight: 200;
 }
 
 .special-dishes header h2,
-.menu header h2 {
+.menu header h2,
+.team-area header h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
 }
 
 .dishes {
-  padding: 0 2rem;
+  padding: 4rem 2rem;
 }
 
 .dishes .number {
@@ -263,6 +277,10 @@ nav .logo img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
 }
 
+.menu {
+  margin: 10rem 0;
+}
+
 .menu .breakfast-items {
   margin: 1rem 2rem 0 0;
 }
@@ -272,8 +290,14 @@ nav .logo img {
   padding-bottom: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+  .menu .breakfast-items .heading {
+    margin: 2rem 0;
+  }
+}
+
 .menu .breakfast-items .heading h3 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -292,6 +316,12 @@ nav .logo img {
   border-radius: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .menu .breakfast {
+    text-align: center;
+  }
+}
+
 .menu .breakfast-description {
   width: calc(100% - 95px);
   padding-left: 1rem;
@@ -300,6 +330,103 @@ nav .logo img {
 .menu .breakfast-description h4 {
   font-size: 1.3rem;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.team-area {
+  padding: 10rem 0;
+}
+
+.team-area .team.row {
+  justify-content: space-between;
+}
+
+.team-area .team.row .col-4 {
+  position: relative;
+}
+
+.team-area .team.row .col-4:hover .team-description {
+  height: 120px;
+}
+
+.team-area .team.row .col-4 .team-description {
+  padding: 1rem 0;
+  transition: all 0.4s;
+  width: calc(100% - 50px);
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  left: 50%;
+  height: 90px;
+  transform: translate(-50%, -15px);
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .team-area .team-card {
+    margin: 2rem 0;
+    text-align: center;
+  }
+}
+
+.team-area .team-card img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .team-area .team-card img {
+    width: 60%;
+  }
+}
+
+.contact-area {
+  background: url("../../images/reservation-bg.jpg") no-repeat;
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-area {
+    padding: 3rem;
+  }
+}
+
+.contact-area .contact {
+  margin-top: 4rem;
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-area .contact {
+    padding: 1rem;
+  }
+}
+
+.contact-area .contact h6 {
+  color: #f34949;
+}
+
+.contact-area .contact h2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contact-area .contact .form-group {
+  margin: 1rem 0;
+}
+
+footer {
+  padding-bottom: 2rem;
+}
+
+footer img {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #f34949;
+  text-decoration: none;
 }
 
 h1,
@@ -317,7 +444,6 @@ body {
 }
 
 main {
-  padding: 2rem 4rem;
   background: #fff;
 }
 /*# sourceMappingURL=styles.css.map */

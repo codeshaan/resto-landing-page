@@ -6,14 +6,19 @@
   // border: 2px solid #ff3600 !important;
 }
 
+// media-queries
+@import 'tablet';
+
 @import "config";
 @import "nav";
 @import "hero";
 @import "buttons";
 @import "welcome-area";
-@import 'special_dishes';
-@import 'menu';
-
+@import "special_dishes";
+@import "menu";
+@import "team-area";
+@import "contact-area";
+@import 'footer';
 
 h1,
 h2,
@@ -30,6 +35,5 @@ body {
 }
 
 main {
-  padding: 2rem 4rem;
   background: #fff;
 }

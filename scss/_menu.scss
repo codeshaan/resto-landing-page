@@ -1,14 +1,18 @@
 .menu {
+  margin: 10rem 0;
   .breakfast-items {
     margin: 1rem 2rem 0 0;
 
     .heading {
+      @include tablet {
+        margin: 2rem 0;
+      }
       text-align: center;
       padding-bottom: 3rem;
     }
 
     .heading h3 {
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: "Josefin Sans", sans-serif;
       font-weight: bold;
     }
   }
@@ -25,6 +29,10 @@
       height: 100px;
       width: 100px;
       border-radius: 100%;
+    }
+
+    @include tablet {
+      text-align: center;
     }
   }
 

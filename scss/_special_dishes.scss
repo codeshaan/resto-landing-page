@@ -1,6 +1,6 @@
 .special-dishes {
   background: #f7f8f9;
-  margin: 10rem  0;
+  margin: 10rem 0;
   padding: 4rem 0;
 
   .row {
@@ -9,7 +9,8 @@
 }
 
 .special-dishes header,
-.menu header {
+.menu header,
+.team-area header {
   text-align: center;
   padding: 0 6rem;
 
@@ -25,7 +26,7 @@
 }
 
 .dishes {
-  padding: 0 2rem;
+  padding: 4rem 2rem;
   .number {
     margin-bottom: 2rem;
 
