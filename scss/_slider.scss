@@ -1,0 +1,34 @@
+.glider.draggable {
+  overflow: hidden;
+}
+
+.glider-contain.multiple {
+  position: relative;
+
+  .nav-buttons {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    .nav-btn {
+      padding: 1rem 2.5rem;
+
+      button {
+        background: transparent;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+
+.glider {
+  img {
+    width: 110%;
+  }
+}

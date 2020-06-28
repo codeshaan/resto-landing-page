@@ -1,5 +1,16 @@
 nav {
-  padding: 2rem 6rem;
+  padding: 2rem 4rem;
+
+  @include tablet {
+    padding: 2rem 0;
+  }
+
+  .nav-logo {
+    @include tablet {
+      order: -1;
+      margin-bottom: 1rem;
+    }
+  }
 
   a {
     color: #000;

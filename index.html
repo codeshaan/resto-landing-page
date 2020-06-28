@@ -6,6 +6,7 @@
     <title>Resto Restaurent</title>
     <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/glider.min.css" />
   </head>
   <body>
     <style></style>
@@ -35,7 +36,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Special Dishes</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-logo">
               <a class="nav-link" href="#"
                 ><img src="./images/logo.png" class="logo" alt=""
               /></a>
@@ -79,9 +80,34 @@
             </div>
           </div>
           <div class="hero-right col-lg-6 col-md-12">
-            <div class="image-slider">
-              <img src="./images/hero-1.jpg" alt="" />
+            <!-- <div class="image-slider "> -->
+            <div class="glider-contain multiple">
+              <div class="nav-buttons">
+                <div class="nav-btn">
+                  <button class="glider-prev">
+                    <ion-icon name="caret-back-outline"></ion-icon>
+                  </button>
+                </div>
+                <div class="nav-btn">
+                  <button class="glider-next">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="glider">
+                <div>
+                  <img src="./images/hero-1.jpg" />
+                </div>
+                <div>
+                  <img src="./images/hero-2.jpg" />
+                </div>
+                <div>
+                  <img src="./images/hero-3.jpg" />
+                </div>
+              </div>
             </div>
+            <!-- </div> -->
           </div>
         </section>
 
@@ -531,6 +557,8 @@
       </footer>
     </main>
     <script src="https://unpkg.com/ionicons@5.1.0/dist/ionicons.js"></script>
+    <script src="./js/glider.min.js"></script>
+    <script src="./js/app.js"></script>
     <!--     JavaScript and dependencies -->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

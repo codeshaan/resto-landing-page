@@ -7,6 +7,9 @@
   }
 
   .cta-heading h1 {
+    @include tablet {
+      font-size: 2rem;
+    }
     font-family: "Josefin Sans", sans-serif;
     font-weight: bold;
     font-size: 3.48rem;
@@ -39,12 +42,12 @@
 }
 
 .hero-right {
-  .image-slider {
-    // width: 540px;
+  img {
+    width: 100%;
+    margin-left: 50px;
 
-    img {
-      width: 80%;
-      margin-left: 50px;
+    @include tablet {
+      margin-left: 0px;
     }
   }
 }

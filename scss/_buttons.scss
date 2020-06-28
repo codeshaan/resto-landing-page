@@ -1,4 +1,7 @@
 .primary-btn {
+  @include tablet {
+    width: 100%;
+  }
   background: $red-light-color;
   color: #fff;
   padding: 9px 25px;
@@ -16,6 +19,10 @@
 }
 
 .light-link {
+  @include tablet {
+    width: 100%;
+    text-align: center;
+  }
   text-decoration: none;
   color: #000;
   transition: all 0.4s;
