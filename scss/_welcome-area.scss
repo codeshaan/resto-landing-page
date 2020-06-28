@@ -4,12 +4,13 @@
   & > div {
     padding: 1rem 3rem;
   }
-  .col-5 {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-image: url("../../images/hero-2.jpg");
-    background-repeat: no-repeat;
+  .col-lg-5 {
+    img {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      width: 140%;
+    }
   }
-}
+} 
 
 .welcome-text {
   p {
