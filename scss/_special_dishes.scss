@@ -31,6 +31,13 @@
     margin-bottom: 2rem;
 
     h1 {
+      @include tablet {
+        font-size: 30px;
+
+        &::before {
+          display: none;
+        }
+      }
       font-size: 60px;
       font-family: "Josefin Sans", sans-serif;
       position: relative;
@@ -48,6 +55,9 @@
   }
 
   .text {
+    @include tablet {
+      padding-left: 0;
+    }
     padding-left: 90px;
 
     .dish-name {
@@ -70,6 +80,12 @@
         font-weight: bold;
         font-family: "Josefin Sans", sans-serif;
       }
+
+      .dish-price + button {
+        @include tablet {
+          margin: 1rem 0;
+        }
+      }
     }
   }
 }
@@ -77,5 +93,13 @@
 .col-5.steak-img {
   img {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
+  }
+}
+
+.dishes.row:nth-child(3) {
+  .col-lg-5:nth-child(1) {
+    @include tablet {
+      order: 1;
+    }
   }
 }

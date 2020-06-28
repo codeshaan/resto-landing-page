@@ -58,6 +58,13 @@ nav li {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-bg .cta-actions > * {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
 .hero-bg .cta-grid {
   margin-top: 60px;
 }
@@ -215,6 +222,15 @@ nav li {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .dishes .number h1 {
+    font-size: 30px;
+  }
+  .dishes .number h1::before {
+    display: none;
+  }
+}
+
 .dishes .number h1:before {
   content: "";
   position: absolute;
@@ -227,6 +243,12 @@ nav li {
 
 .dishes .text {
   padding-left: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .dishes .text {
+    padding-left: 0;
+  }
 }
 
 .dishes .text .dish-name {
@@ -252,8 +274,20 @@ nav li {
   font-family: "Josefin Sans", sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  .dishes .text .dish-description .dish-price + button {
+    margin: 1rem 0;
+  }
+}
+
 .col-5.steak-img img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .dishes.row:nth-child(3) .col-lg-5:nth-child(1) {
+    order: 1;
+  }
 }
 
 .menu {
@@ -319,15 +353,15 @@ nav li {
   justify-content: space-between;
 }
 
-.team-area .team.row .col-4 {
+.team-area .team.row .col-lg-4 {
   position: relative;
 }
 
-.team-area .team.row .col-4:hover .team-description {
+.team-area .team.row .col-lg-4:hover .team-description {
   height: 120px;
 }
 
-.team-area .team.row .col-4 .team-description {
+.team-area .team.row .col-lg-4 .team-description {
   padding: 1rem 0;
   transition: all 0.4s;
   width: calc(100% - 50px);
@@ -378,7 +412,7 @@ nav li {
 
 @media screen and (max-width: 768px) {
   .contact-area .contact {
-    padding: 1rem;
+    padding: 3rem;
   }
 }
 
