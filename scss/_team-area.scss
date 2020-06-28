@@ -1,0 +1,43 @@
+.team-area {
+  padding: 10rem 0;
+
+  .team.row {
+    justify-content: space-between;
+
+    & .col-4 {
+      position: relative;
+
+      &:hover .team-description {
+        height: 120px;
+      }
+
+      .team-description {
+        padding: 1rem 0;
+        transition: all 0.4s;
+        width: calc(100% - 50px);
+        position: absolute;
+        bottom: 15px;
+        text-align: center;
+        left: 50%;
+        height: 90px;
+        transform: translate(-50%, -15px);
+        background: #fff;
+      }
+    }
+  }
+
+  .team-card {
+    @include tablet {
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+
+      @include tablet {
+        width: 60%;
+      }
+    }
+  }
+}

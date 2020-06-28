@@ -1,0 +1,15 @@
+footer {
+  @include tablet {
+    padding-top: 4rem;
+  }
+  padding-bottom: 2rem;
+  img {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $red-light-color;
+    text-decoration: none;
+  }
+}

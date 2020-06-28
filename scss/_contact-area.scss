@@ -1,0 +1,30 @@
+.contact-area {
+  background: url("../../images/reservation-bg.jpg") no-repeat;
+  padding-bottom: 10rem;
+  
+  @include tablet {
+    padding: 3rem;
+  }
+
+  .contact {
+    @include tablet {
+      padding: 1rem;
+    }
+
+    margin-top: 4rem;
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    h6 {
+      color: $red-light-color;
+    }
+    h2 {
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    .form-group {
+      margin: 1rem 0;
+    }
+  }
+}
